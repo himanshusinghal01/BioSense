@@ -1,0 +1,34 @@
+[
+  {
+    "id": "doc_01",
+    "title": "Soil Organic Carbon and Agricultural Productivity",
+    "topic": "soil_health",
+    "keywords": "soil organic carbon soc monoculture low carbon crop yield microbial activity legumes cover crops",
+    "content": "Low soil organic carbon (SOC < 1.0%) severely limits soil water retention and microbial diversity. Monoculture farming exacerbates organic matter depletion. According to FAO studies, introducing legume-based cover crops and intercropping increases SOC by ~15-25% over 2-3 years, restoring microbial habitats and improving nutrient cycling.",
+    "source": "FAO Land and Water Division (2023) - Soil Health Guidelines"
+  },
+  {
+    "id": "doc_02",
+    "title": "Semi-Arid Land Management & Rainwater Harvesting",
+    "topic": "climate_water",
+    "keywords": "semi-arid low rainfall water stress drought moisture retention contour bunding basins",
+    "content": "In semi-arid regions with rainfall below 500mm/year, moisture stress directly constrains plant species richness and crop yield stability. IPCC reports show that implementing contour bunding, micro-basins, and mulching reduces surface runoff by 40% and improves root-zone soil moisture retention by up to 30% within 1-2 seasons.",
+    "source": "IPCC Special Report on Climate Change and Land (2022)"
+  },
+  {
+    "id": "doc_03",
+    "title": "Habitat Fragmentation and Biodiversity Corridors",
+    "topic": "biodiversity",
+    "keywords": "habitat fragmentation pollinators species richness monoculture buffer strip corridor native species",
+    "content": "Continuous monoculture leads to extreme habitat fragmentation and declines in native pollinator richness. Research from UNEP demonstrates that establishing native vegetation buffer strips (5-10m wide) along field boundaries increases native pollinator abundance by 35% and improves ecological connectivity without taking major land out of agricultural production.",
+    "source": "UNEP Global Biodiversity Assessment & IPBES Report (2021)"
+  },
+  {
+    "id": "doc_04",
+    "title": "Deforestation and Soil Erosion Control",
+    "topic": "human_impact",
+    "keywords": "deforestation pollution erosion tree cover agroforestry canopy microclimate temperature",
+    "content": "Tree cover loss increases local surface temperatures by 1.5-3.0°C and accelerates topsoil erosion. Agroforestry practices—integrating deep-rooted native tree species with annual crops—stabilize soil structure, mitigate microclimatic heat stress, and enhance multi-trophic biodiversity over a 3-5 year horizon.",
+    "source": "FAO & Agroforestry World Centre (2022)"
+  }
+]
