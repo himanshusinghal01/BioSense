@@ -1,54 +1,34 @@
-# BioSense AI Lite — AI Environmental Scientist
+# BioSense AI 
 
-A lightweight, simple, and explainable AI system designed for the **Darukaa.Earth AI Biodiversity Intelligence Chatbot Challenge**.
+BioSense AI is a simple environmental reasoning assistant built for the Darukaa.Earth AI Challenge. It helps analyze soil conditions, weather patterns, and crop setups to suggest practical ways to improve local biodiversity.
 
-## Project Features
-1. **Retrievable Knowledge Layer (RAG)**: Built with TF-IDF cosine similarity search over structured environmental reference data (FAO, IPCC, UNEP).
-2. **Multi-Metric Reasoning**: Explicitly connects 3+ environmental variables together (Soil Organic Carbon, Water Stress, Land Use/Monoculture) to evaluate compounded ecological risks.
-3. **Conversational Memory & Clarification**: Automatically detects missing environmental inputs (e.g., missing SOC %, rainfall pattern) and asks follow-up clarifying questions.
-4. **Input Flexibility**: Accepts both Natural-Language text descriptions and structured JSON inputs.
-5. **Evidence-Backed Output**: Generates non-obvious recommendations formatted with time horizons, impacted metrics, scientific explanations, and cited credible sources.
+Instead of relying purely on an LLM to generate generic answers, this project uses a lightweight RAG setup with a built-in reasoning engine to ensure all recommendations are backed by real environmental research (FAO, IPCC, UNEP).
 
 ---
 
-## File Structure
-```text
-biosense-ai-lite/
-│── app.py             # Streamlit Interactive Dashboard
-│── reasoning.py       # Multi-Metric Environmental Reasoning Engine
-│── requirements.txt   # Python dependencies
-│── .env.example       # OpenRouter API Key configuration
-│── README.md          # Setup & Architecture guide
-│── data/
-│   └── knowledge.json # Retrievable Knowledge Base (FAO/IPCC grounded)
-└── rag/
-    └── retriever.py   # TF-IDF RAG Search Engine
-```
+# Key Features
+
+- **Multi-Metric Analysis**: Connects 3+ environmental metrics (e.g., Low Soil Carbon + Semi-Arid Rainfall + Monoculture Land Use) to highlight compounded ecological risks.
+- **Evidence Retrieval (RAG)**: Uses TF-IDF cosine similarity search over a curated dataset of FAO, IPCC, and UNEP research summaries (`knowledge.json`).
+- **Clarifying Inputs**: Detects when essential environmental metrics are missing and prompts the user for missing details.
+- **Flexible Input Modes**: Supports natural language text and structured JSON formats.
+- **Offline / Fallback Support**: Runs smoothly even without an API key using pre-configured local reasoning rules.
 
 ---
 
-## Quick Setup Guide
+# File Overview
 
-### 1. Extract ZIP & Open in VS Code
-Open VS Code, select **File > Open Folder**, and open the extracted `biosense-ai-lite` folder.
+- `app.py`: Main Streamlit UI and app layout.
+- `reasoning.py`: Core logic for multi-variable environmental analysis.
+- `rag/retriever.py`: Search engine script handling document indexing and similarity scoring.
+- `data/knowledge.json`: Local knowledge base containing research summaries and metadata.
+- `requirements.txt`: Project dependencies.
 
-### 2. Set Up Virtual Environment
-In VS Code Terminal (Ctrl + ~):
+---
+
+# Local Setup
+
+## 1. Clone or Open Folder
+Navigate to the project folder in your terminal:
 ```bash
-python -m venv .venv
-# On Windows PowerShell:
-.\.venv\Scripts\Activate.ps1
-```
-
-### 3. Install Dependencies
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 4. Set OpenRouter API Key (Optional)
-Copy `.env.example` to `.env` and add your OpenRouter key if desired. If left blank, built-in fallback reasoning generates complete evidence-backed answers offline!
-
-### 5. Run the Application
-```bash
-streamlit run app.py
-```
+cd biosense-ai
